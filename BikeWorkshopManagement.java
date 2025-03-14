@@ -13,13 +13,11 @@ public class BikeWorkshopManagement extends JFrame {
         cardLayout = new CardLayout();
         setLayout(cardLayout);
 
-        // Initialize Panels
         mainPanel = new MainPanel(this);
         buyPartsPanel = new BuyPartsPanel(this);
         serviceBikePanel = new ServiceBikePanel(this);
         cartPanel = new CartPanel(this);
 
-        // Add panels to the frame
         add(mainPanel, "Main");
         add(buyPartsPanel, "BuyParts");
         add(serviceBikePanel, "ServiceBike");
